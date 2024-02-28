@@ -1,4 +1,4 @@
-let obj = {
+let persona = {
     firstName: "Rafael",
     lastName: "Leao",
     country: "Italy",
@@ -9,8 +9,12 @@ let obj = {
 
 function countNumberOfKeys(obj) {
     // your code here
-   
+    let count = 0;
+    for(let key in obj){
+        count ++
+    }
+    return count
 }
 
-let output = countNumberOfKeys(obj);
+let output = countNumberOfKeys(persona);
 console.log(output); // --> 6
